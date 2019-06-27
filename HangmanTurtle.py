@@ -1,8 +1,14 @@
+"""
+Rosalind Kidwell
+6/27/19
+This game uses turtle graphics to create a hangman game. It also teaches the random choice function and sleep function.
+Functions are used to create reusable code. Other relevant teaching areas are: while loops, if statements, for loops
+"""
 import turtle
 from time import sleep
 import random
 
-wordList = ["cow", "computers", "modernity", "boop", "doggy", "cat"]
+wordList = ["cow", "computers", "modernity", "boop", "doggy", "cat", "dance"]
 
 def startup():
     t = turtle.Turtle()
@@ -25,6 +31,7 @@ def startup():
     print("-"*26)
     print("Welcome to HANGMAN!")
     print("-"*26)
+    sleep(1)
     hangman(t)
 
 
